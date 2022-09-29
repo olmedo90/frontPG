@@ -1,0 +1,174 @@
+:root {
+    --bg-color1:  #2F0079,#4E0079, #6E0079;
+    --bg-color2:  #00517c,#00747C, #007DDC;
+    --bg-color3:  #751400, #D34400;
+    --bg-color4:  #9300BA, #BA003F;
+    --bg-color5:  #9300BA, #00589B;
+    --bg-color6:  #009B60, #00589B;
+}
+.icon-drawer{
+    color: rgb(96, 237, 127)
+    ;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-drawer-open {
+    width: 13rem;
+}
+
+.w-drawer-close {
+    width: 3rem;
+}
+
+.bg-dark-purple {
+    background: linear-gradient(90deg , var(--bg-color1));
+   
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.p-drawer {
+    padding: 0.5rem;
+}
+
+.pt-8 {
+    padding-top: 3rem;
+}
+
+
+.rotate-drawer {
+    transform: rotate(0deg);
+
+}
+.rotate-drawer-close {
+    transform: rotate(180deg);
+}
+
+.relative {
+    position: relative;
+}
+
+
+.absolute {
+    position: absolute;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.-right-3 {
+    right: -0.75rem;
+}
+
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.rotate-180 {
+    --tw-rotate: 180deg;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.items-center {
+    align-items: center;
+}
+
+.duration-500 {
+    transition-duration: 500ms;
+}
+
+.origin-left {
+    -webkit-transform-origin: left;
+    transform-origin: left;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.duration-200 {
+    transition-duration: 200ms;
+}
+
+
+
+.p-drawer {
+    padding-top: 1rem;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.text-gray-300 {
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.gap-x-4 {
+    column-gap: 1rem;
+}
+
+.mt-9 {
+    margin-top: 1.5rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.bg-light-white {
+    background-color: rgba(255, 255, 255, 0.17);
+}
+
+.hidden-drawer {
+    display: none;
+}
+
+
+.duration-200 {
+    transition-duration: 200ms;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.p-7 {
+    padding: 0.1rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+.wh-icon{
+    width: 1.5rem;
+}
+
