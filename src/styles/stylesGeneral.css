@@ -4,8 +4,6 @@
 }
 
 .body-nav {
-    overflow: hidden;
-    background: black;
 }
 
 /* .nav-section {
@@ -141,7 +139,7 @@ background: black;
 }
 
 .w-screen {
-    width: 94.6%;
+    width: 100%;
 }
 
 .h-screenContainer {

@@ -31,9 +31,9 @@ function App() {
   }
   return (
     <Router>
-      <div className=" d-flex  h-screenContainer ">
+      <div className=" d-flex  h-screenContainer w-screen ">
         <Drawer />
-        <div className=" w-screen  body-nav">
+        <div className=" w-screen  body-nav bg-primary">
           <Header />
 
           <Routes>

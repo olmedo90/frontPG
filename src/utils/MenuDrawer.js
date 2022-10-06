@@ -1,15 +1,14 @@
 export const MenuDrawer = {
     menus: [
-        { routes: 'dashboard', title: "Dashboard", src: "bi-graph-up-arrow", gap: true},
-        { routes: 'inventarios', title: "Inbox", src: "Chat" },
-        { routes: 'plancuentas', title: "Plan De Cuentas", src: `plandecuentas`, gap: true },
-        { routes: 'inventarios', title: "Schedule ", src: "Calendar" },
-        { routes: 'inventarios', title: "Search", src: "Search" },
-        { routes: 'inventarios', title: "Analytics", src: "Chart" },
-        { routes: 'inventarios', title: "C. de Inventarios", src: "inventario", gap: true },
+        { routes: 'dashboard', title: "Dashboard", src: "bi-graph-up-arrow" },
+        { routes: 'inventarios', title: "Inbox", src: "bi-telegram" },
+        { routes: 'plancuentas', title: "Contabilidad", src: `plandecuentas`, gap: true },
+        { routes: 'inventarios', title: "Schedule ", src: "bi-calendar" },
+        { routes: 'inventarios', title: "Search", src: "bi-search" },
+        { routes: 'inventarios', title: "Analytics", src: "bi-clipboard2-data-fill" },
+        { routes: 'inventarios', title: "C. Inventario", src: "inventario", gap: true },
         { routes: 'inventarios/createItems', title: "Crear Items", src: "bi-clipboard2-plus-fill" },
-
         { routes: 'inventarios', title: "Files ", src: "Folder", gap: true },
-        { routes: 'inventarios', title: "Setting", src: "Setting" },
+        { routes: 'inventarios', title: "", src: "bi-gear" },
     ],
 }

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MenuDrawer } from "../utils/MenuDrawer";
 import './drawer.css';
-import { TextAfter } from "./TextAfter";
 export const Drawer = () => {
   const [open, setOpen] = useState(true);
 
@@ -19,7 +18,7 @@ export const Drawer = () => {
         onClick={() => setOpen(!open)}
         alt="alt"
       />
-      <div className="flex gap-x-4 jst-content ">
+      <div className="flex  jst-content ">
         <img
           src="/assets/logo.png"
           className={`cursor-pointer  ${!open && "pt-8 "} `}
@@ -31,19 +30,24 @@ export const Drawer = () => {
           users
         </h1>
       </div>
-      <section className='p-drawer'>
-        {MenuDrawer.menus.map((Menu, index) => (
-          <nav key={index}
-            className={`cursor-pointer ul-nav 
-              ${Menu.gap ? "mt-9" : "mt-2 "}  ${!open && 'icons-close '}`}>
-              {/* <TextAfter gap={Menu.gap} srcs={Menu.src} titles={Menu.title} open={open} /> */}
+      <section className='p-drawer '>
+        <ul className={` ul-nav ${!open && 'ul-nav-close'}`}>
+          {
+            MenuDrawer.menus.map((Menu, index) => (
+              <li key={index}  title={Menu.title}   className={`${open ? 'ul-nav-li' : 'ul-nav-li-close ul-nav-li-sms cursor-pointer'} ${Menu.gap && 'mt-nav-2'}`} >
 
-            <Link to={Menu.gap ? `/${Menu.routes}` : `${Menu.routes}`} className={`${!open && "hidden-drawer "} ul-nav-li `} >
-            <TextAfter gap={Menu.gap} srcs={Menu.src} titles={Menu.title} open={open} />
-              {Menu.title}
-            </Link>
-          </nav>
-        ))}
+                <Link to={Menu.gap ? `/${Menu.routes}` : `${Menu.routes}`} className={`${!open && 'link-drawer'} `} >
+                  {Menu.gap && <img src={`./assets/${Menu.src}.png`} alt="" className={`${open ? 'wh-icon' : 'wh-icon-close container-img '} `} />
+                  }{Menu.gap || <i className={`bi ${Menu.src}  ${open ? 'wh-icon' : 'wh-icon-close '}`} ></i>}
+                  {` ${open ? Menu.title : ''} `}
+
+                </Link>
+
+              </li>
+            ))
+          }
+        </ul>
+
       </section>
     </div>
   );
