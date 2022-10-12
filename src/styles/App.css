@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.w-screen-container {
+    width: 99.5%;
+}
+
+.h-screen-container {
+    height: 98vh;
+}

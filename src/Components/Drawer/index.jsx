@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { MenuDrawer } from "../utils/MenuDrawer";
+import { MenuDrawer } from "../../utils/MenuDrawer";
 import './drawer.css';
 export const Drawer = () => {
   const [open, setOpen] = useState(true);
@@ -8,7 +8,7 @@ export const Drawer = () => {
 
   return (
     <div
-      className={` ${open ? "w-drawer-open p-drawer " : "w-drawer-close "
+      className={`drawer ${open ? "w-drawer-open p-drawer " : "w-drawer-close "
         } bg-dark-purple h-screen   relative `}
     >
       <img

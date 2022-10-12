@@ -1,0 +1,234 @@
+@import '../../utils/variables.css';
+
+.drawer{
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.pt-8 {
+    padding-top: 2.5rem;
+}
+.w-drawer-open {
+    width: 11rem;
+    height: 98vh;
+    
+}
+
+.w-drawer-close {
+    width: 3.5rem;
+}
+
+.bg-dark-purple {
+    background: linear-gradient(90deg, var(--colors3));
+
+}
+.p-drawer {
+    padding-top: 0.8rem;
+}
+.h-screen {
+    height: auto;
+}
+
+.jst-content {
+    display: flex;
+    width: 80%;
+    column-gap: 10%;
+    margin-left: 5%;
+
+}
+
+/* positions relative */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+/* rotate icon drawer */
+.rotate-drawer {
+    transform: rotate(0deg);
+
+}
+
+.rotate-drawer-close {
+    transform: rotate(180deg);
+}
+
+
+.-right-3 {
+    right: -0.75rem;
+}
+
+
+/* images and logos */
+.wh-icon {
+    width: 1.6rem;
+    font-size: 1.3rem;
+    border-radius: 100%;
+}
+
+.wh-icon-close {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.container-img {
+    width: 75%;
+    height: auto;
+    border-radius: 100%;
+}
+
+/* navigations */
+
+.p-drawer {
+    padding-top: 0.8rem;
+}
+
+.ul-nav {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    list-style: none;
+    padding-left: 0;
+    margin: 0.1rem;
+}
+
+.ul-nav-close {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0.1rem;
+
+}
+
+.ul-nav-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    width: 95%;
+    height: 2.5rem;
+    padding-left: 0.3rem;
+    border-radius: 0.6rem;
+    margin: 0.2rem;
+    border: 0.05rem solid rgba(255, 255, 255, 0.4);
+    border-right: 0.05rem solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0.3rem 1.1rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.5rem);
+    transition: 1s;
+
+    overflow: hidden;
+}
+
+.ul-nav-li-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    width: 68%;
+    height: 2.1rem;
+    border-radius: 0.6rem;
+    margin: 0.2rem;
+    border: 0.05rem solid rgba(255, 255, 255, 0.4);
+    border-right: 0.05rem solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0.3rem 1.1rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    transition: 1s;
+    position: relative;
+    overflow: initial;
+}
+.ul-nav-li-close::after{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  content: attr(title);
+  background: rgba(7, 7, 7, 0.5);
+  /* background: rgb(0, 0, 0,0.5); */
+  color: rgb(255, 255, 255,0.8);
+  position: absolute;
+  width: 4.5rem;
+  left: 2.3rem;
+  font-size: 0.72rem;
+  visibility: hidden;
+  transition: all 0.7s ease;
+}
+.ul-nav-li-close:hover::after{
+  visibility: visible;
+  opacity: 1;
+
+}
+
+.ul-nav-li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.ul-nav-li:hover {
+    transform: translateX(30px);
+    transition: 0.7s;
+}
+.ul-nav-li-close:hover {
+    transform: translateX(15px);
+    transition: 0.7s;
+}
+
+.ul-nav-li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 101%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(11.7rem);
+    transition: 0.6s;
+
+    overflow: hidden;
+}
+
+.ul-nav-li-close::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    right: 5rem;
+    width: 0.2rem;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(0deg) translateX(5rem);
+    backdrop-filter: blur(.08rem);
+    transition: 0.2s;
+    z-index: 1;
+    visibility: hidden;
+  }
+
+.ul-nav-li:hover::before {
+    transform: skewX(45deg) translateX(-11.7rem);
+
+    transition: 0.6s;
+} 
+
+.ul-nav-li-close:hover::before {
+    transform: skewX(0deg) translateX(3rem);
+    visibility: visible;
+
+    transition: 0.3s;
+}

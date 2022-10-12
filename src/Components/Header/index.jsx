@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Gradient } from '../utils/Colors';
-import './drawer.css';
-
+import { Gradient } from '../../utils/Colors';
+import './header.css';
 export const Header = () => {
 
   const [user, setUser] = useState(null);
@@ -18,7 +17,7 @@ export const Header = () => {
   // hours function
   
   return (
-    <section className={`w-drawer row p-1 d-flex justify-content-between align-items-center    `} style={{ background: Gradient.gradient3 }}>
+    <section className={`position-header  p-1 d-flex justify-content-between align-items-center row   `} >
       <img src="/assets/logoMabel.png" alt="alt" className='logo-mabels' />
 
       <h2 className={`col-md-6 `}>Distribuidora Mabel's Condori</h2>
