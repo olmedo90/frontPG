@@ -12,7 +12,7 @@ export const NavbarAccount = () => {
         Navigate(link)
     }
   return (
-    <div className="col-md-1 my-3" role="presentation" >
+    <div className="col-md-10 my-3" role="presentation" >
         <Breadcrumbs aria-label="breadcrumb">
           <Link to={"/dashboard"} className={`accounts`}><Icon style='iconNavbar' icon={faHouse} /> Inicio</Link>
           <Link to={"chartOfAccounts"} className={`accounts`}><Icon style='iconNavbar' icon={faFileInvoice} /> Plan de Cuentas</Link>

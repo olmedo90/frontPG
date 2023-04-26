@@ -73,7 +73,7 @@ export const ChartOfAccount = () => {
 
 `;
   return (
-    <div>ChartOfAccount
+    <div className='bg-info'>ChartOfAccount
 
     <button onClick={()=>createChartOfAccountsTree(input)}>genearra</button>
 

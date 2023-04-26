@@ -7,7 +7,7 @@
 }
 .w-drawer-close {
     width: 4.4%;
-    
+    height: 100vh; 
 }
 .text-xl {
     font-size: 1.25rem;
@@ -31,8 +31,8 @@
 
 .jst-content {
     display: flex;
-    width: 8%;
-    column-gap: 1%;
+    width: 80%;
+    column-gap: 10%;
     margin-left: 5%;
 
 }
@@ -50,12 +50,15 @@
 }
 /* rotate icon drawer */
 .rotate-drawer {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
+    animation: 2s;
 
 }
 
 .rotate-drawer-close {
     transform: rotate(180deg);
+    animation: 2s;
+
 }
 
 
@@ -118,9 +121,9 @@
     padding-left: 0.3rem;
     border-radius: 0.6rem;
     margin: 0.2rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.4);
-    border-right: .5rem solid rgba(255, 255, 255, 0.2);
-    border-bottom: .5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.05rem solid rgba(255, 255, 255, 0.4);
+    border-right: 0.05rem solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.2);
     box-shadow: 0.3rem 1.1rem rgba( 0,0 ,0 , 0.1);
     backdrop-filter: blur(0.5rem);
     transition: 1s;
@@ -133,13 +136,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1%;
+    width: 88%;
     height: 2.8rem;
     border-radius: 0.6rem;
-    margin: 0.6rem;
-    border: 0.5rem solid rgba(255, 255, 255,0.4);
-    border-right:0.5rem solid rgba(255, 255, 255, 0.2);
-    border-bottom: 0.5rem solid rgba(255, 255, 255, 0.2);
+    margin: 0.06rem;
+    border: 0.05rem solid rgba(255, 255, 255,0.4);
+    border-right:0.05rem solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.2);
     box-shadow: 0.3rem 1.1rem rgba(0,0,0,0.1);
     backdrop-filter: blur(0.5rem);
     transition: 1s;
@@ -151,7 +154,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 1.5rem;
-  content: attr(title);
   background: rgba(7, 7, 7, 0.5);
   /* background: rgb(, , ,.5); */
   color: rgb(255, 255, 255,0.8);
@@ -192,8 +194,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 3px;
-    height: 11%;
+    width: 30px;
+    height: 101%;
     background: rgba(255, 255, 255, 0.5);
     transform: skewX(45deg) translateX(11.7rem);
     transition: 0.6s;
