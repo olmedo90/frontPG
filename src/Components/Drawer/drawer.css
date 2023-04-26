@@ -121,7 +121,7 @@
     border: 0.5rem solid rgba(255, 255, 255, 0.4);
     border-right: .5rem solid rgba(255, 255, 255, 0.2);
     border-bottom: .5rem solid rgba(255, 255, 255, 0.2);
-    box-shadow: .3rem 1.1rem rgba( 0,0 ,0 , 0.1);
+    box-shadow: 0.3rem 1.1rem rgba( 0,0 ,0 , 0.1);
     backdrop-filter: blur(0.5rem);
     transition: 1s;
 
@@ -138,9 +138,9 @@
     border-radius: 0.6rem;
     margin: 0.6rem;
     border: 0.5rem solid rgba(255, 255, 255,0.4);
-    border-right:0 .5rem solid rgba(255, 255, 255, 0.2);
+    border-right:0.5rem solid rgba(255, 255, 255, 0.2);
     border-bottom: 0.5rem solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0.3rem 1.1rem rgba(0,0 ,0 ,0 0.1);
+    box-shadow: 0.3rem 1.1rem rgba(0,0,0,0.1);
     backdrop-filter: blur(0.5rem);
     transition: 1s;
     position: relative;
@@ -158,7 +158,7 @@
   position: absolute;
   width: 4.5rem;
   left: 2.3rem;
-  font-size: .3rem;
+  font-size: 0.72rem;
   visibility: hidden;
   transition: all 0.7s ease;
 }
@@ -170,7 +170,7 @@
 }
 
 .ul-nav-li a {
-    width: 1%;
+    width: 100%;
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
@@ -204,12 +204,12 @@
 .ul-nav-li-close::before {
     content: '';
     position: absolute;
-    border-radius: 5%;
+    border-radius: 50%;
     right: 5rem;
     width: 0.2rem;
-    height: 1%;
+    height: 100%;
     background: rgba(255, 255, 255, 0.8);
-    transform: skewX(deg) translateX(5rem);
+    transform: skewX(0deg) translateX(5rem);
     backdrop-filter: blur(0.8rem);
     transition: 0.2s;
     z-index: 1;
@@ -223,7 +223,7 @@
 } 
 
 .ul-nav-li-close:hover::before {
-    transform: skewX(deg) translateX(1.6rem);
+    transform: skewX(0deg) translateX(1.6rem);
     visibility: hidden;
 
     transition: 0.3s;
