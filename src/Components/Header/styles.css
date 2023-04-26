@@ -1,0 +1,13 @@
+@import '../../utils/variables.css';
+.position-header{
+    width: 99.3%;
+    height: 1vh;
+    background:linear-gradient(9deg, var(--colors3));
+}
+/* .logo-mabels {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5%;
+    padding: .3rem;
+    margin-left: 1.5rem;
+} */

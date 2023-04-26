@@ -1,0 +1,86 @@
+.container-login {
+    width: 1%;
+    height: 1%;
+    background-image: url("https://31.media.tumblr.com/41c1e3f366d61793e5a3df7e46b462/tumblr_n4vc8sDHsd1st5lhmo1_128.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    box-shadow: 6px 6px 2px white;
+    backdrop-filter: blur(.5rem);
+}
+.title{
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-family: "Segoe UI";
+
+
+}
+.login-form {
+    min-height: 1rem;
+    margin: auto;
+    max-width: 5%;
+    padding: .5rem;
+}
+
+.login-username,
+.login-password {
+    background: transparent;
+    border:  solid;
+    border-bottom: 1px solid rgba(white, .5);
+    color: white;
+    display: block;
+    margin: 1rem;
+    padding: .5rem;
+    transition: 25ms background ease-in;
+    width: calc(1% - 3rem);
+
+}
+
+.login-username:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+.login-password:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+.login-username:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+.login-password:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+.login-submit {
+    width: 15px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    display: block;
+    margin: 1rem auto;
+    min-width: 1px;
+    padding: .25rem;
+
+}
+
+.login-submit:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+.login-submit:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}

@@ -2,7 +2,7 @@ export const MenuDrawer = {
     menus: [
         { routes: 'dashboard', title: "Dashboard", src: "bi-graph-up-arrow" },
         { routes: 'inventarios', title: "Inbox", src: "bi-telegram" },
-        { routes: 'plancuentas', title: "Contabilidad", src: `plandecuentas`, gap: true },
+        { routes: 'accounting', title: "Contabilidad", src: `accounting`, gap: true },
         { routes: 'inventarios', title: "Schedule ", src: "bi-calendar" },
         { routes: 'inventarios', title: "Search", src: "bi-search" },
         { routes: 'inventarios', title: "Analytics", src: "bi-clipboard2-data-fill" },

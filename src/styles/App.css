@@ -1,11 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-.w-screen-container {
-    width: 99.5%;
-}
 
-.h-screen-container {
-    height: 98vh;
+
+.w-container-open{
+    background-color: aliceblue;
+    width: 99.3%;
+    height: 9vh;
+    padding-left: px;
+    padding-right: px;
+}
+.h-container{
+    height: 9vh;
+    padding-left: px;
+    padding-right: px;
+
+}
+.h-container-title{
+    height:1vh;
 }

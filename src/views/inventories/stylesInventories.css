@@ -9,20 +9,20 @@
     background-color: brown;
 }
 .btnCreate{
-    color: #f0f0f0;
+    color: #fff;
     background-color: rgb(9, 152, 57);
     font-size: medium;
-    border: 0.2rem solid green;
+    border: .2rem solid green;
 }
 .btnCreate:hover{
     color: rgb(9, 152, 57);
-    background-color: #f0f0f0;
+    background-color: #fff;
     font-size: medium;
-    border: 0.2rem solid white;
+    border: .2rem solid white;
 }
 .btnCreate:focus{
     color: rgb(9, 152, 57);
-    background-color: #f0f0f0;
+    background-color: #fff;
     font-size: medium;
-    border: 0.2rem solid white;
+    border: .2rem solid white;
 } */

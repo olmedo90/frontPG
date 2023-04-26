@@ -1,28 +1,28 @@
 :root{
-    --colors1: #2F0079, #4E0079, #6E0079;
-    --colors2 : #00517c, #00747C,#007DDC;
-    --colors9 : #00517c, #2d363b;
-    --colors3 : #751400, #D34400;
-    --colors7 : #380b02, #9f0b0b;
-    --colors4 : #9300BA, #BA003F;
-    --colors5 : #9300BA, #00589B;
-    --colors6 : #009B60,  #00589B;
-    --colors8 : #29312e,  #039b00;
+    --colors1: #2F79, #4E79, #6E79;
+    --colors2 : #517c, #747C,#7DDC;
+    --colors9 : #517c, #2d363b;
+    --colors3 : #7514, #D344;
+    --colors7 : #38b2, #9fbb;
+    --colors4 : #93BA, #BA3F;
+    --colors5 : #93BA, #589B;
+    --colors6 : #9B6,  #589B;
+    --colors8 : #29312e,  #39b;
 
 }
 .btnCreate{
-    color: #f0f0f0;
-    background: linear-gradient(90deg, var(--colors8));
+    color: #fff;
+    background: linear-gradient(9deg, var(--colors8));
     font-size: medium;
-    border: 0.2rem solid linear-gradient(90deg, var(--colors8));
-    font-weight: 400;
+    border: .2rem solid linear-gradient(9deg, var(--colors8));
+    font-weight: 4;
 }
 .btnCreate:hover{
     color: green;
-    background: #f0f0f0;
+    background: #fff;
     font-size: medium;
-    border: 0.1rem solid green;
-    font-weight: 400;
+    border: .1rem solid green;
+    font-weight: 4;
 
 }
 
@@ -31,22 +31,22 @@
 }
 
 .btnClose{
-    color:#f0f0f0;
-    background: linear-gradient(90deg, var(--colors7));
+    color:#fff;
+    background: linear-gradient(9deg, var(--colors7));
     font-size: x-small;
-    border: 0.2rem solid linear-gradient(90deg, var(--colors7));
-    font-weight: 400;
+    border: .2rem solid linear-gradient(9deg, var(--colors7));
+    font-weight: 4;
 }
 .btnClose:hover{
     color: #f6f2f2;
-    background: linear-gradient(90deg, var(--colors7));
+    background: linear-gradient(9deg, var(--colors7));
     font-size: medium;
-    border: 0.2rem solid linear-gradient(90deg, var(--colors7));
-    font-weight: 400;
+    border: .2rem solid linear-gradient(9deg, var(--colors7));
+    font-weight: 4;
 
 }
 .iconClose{
-    color: #b41e01;
+    color: #b41e1;
     font-size: large;
 }
 .iconClose:hover{
@@ -54,21 +54,21 @@
 }
 
 .btnSuccess{
-    background: linear-gradient(90deg, var(--colors8));
+    background: linear-gradient(9deg, var(--colors8));
     color: whitesmoke;
-    border: 0.2rem solid linear-gradient(90deg, var(--colors2));
+    border: .2rem solid linear-gradient(9deg, var(--colors2));
 }
 .btnSuccess:hover{
     color: whitesmoke;
-    border: 0.2rem solid rgb(0, 164, 30);
+    border: .2rem solid rgb(, 164, 3);
 }
 .btnCancel{
-    background:  linear-gradient(90deg, var(--colors9));
+    background:  linear-gradient(9deg, var(--colors9));
     color: whitesmoke;
-    border: 0.2rem solid linear-gradient(90deg, var(--colors9));
+    border: .2rem solid linear-gradient(9deg, var(--colors9));
 }
 .btnCancel:hover{
-    background:  linear-gradient(90deg, var(--colors9));
+    background:  linear-gradient(9deg, var(--colors9));
         color: whitesmoke;
-    border: 0.2rem solid darkcyan;
+    border: .2rem solid darkcyan;
 }

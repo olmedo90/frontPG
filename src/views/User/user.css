@@ -1,0 +1,151 @@
+
+
+
+.form {
+    box-shadow: 6px 6px 2px white;
+    backdrop-filter: blur(.5rem);
+}
+.title{
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-family: "Segoe UI";
+
+
+}
+.login-form {
+    min-height: 1rem;
+    margin: auto;
+    max-width: 5%;
+    padding: .5rem;
+}
+
+.register-username,
+.register-firstName,
+.register-lastName,
+.register-ci,
+.register-email,
+.register-password,
+.register-roleUser{
+    background: transparent;
+    border:  solid;
+    border-bottom: 1px solid rgba(white, .5);
+    color: white;
+    display: block;
+    margin: .5rem;
+    padding: .5rem;
+    transition: 25ms background ease-in;
+    width: calc(1% - 3rem);
+
+}
+.register-username:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+
+.register-username:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+.register-firstName:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+
+.register-firstName:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+.register-lastName:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+
+.register-lastName:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+.register-ci:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+
+.register-ci:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+.register-password:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+
+.register-password:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+.register-email:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+
+.register-email:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+.register-roleUser:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+
+.register-roleUser:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+
+
+
+.login-submit {
+    width: 15px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    display: block;
+    margin: 1rem auto;
+    min-width: 1px;
+    padding: .25rem;
+
+}
+
+.login-submit:hover {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}
+
+.login-submit:focus {
+    background: white;
+    color: black;
+    transition: 25ms background ease-in;
+}

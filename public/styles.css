@@ -1,0 +1,16 @@
+*{
+    margin: px;
+    border: px;
+    padding: px;
+}
+html, body{
+    display: flex;
+    flex-direction: column;
+    height:1vh;
+    margin :px; 
+    border: px;
+    padding: px;
+    background-color: aqua;
+
+}
+

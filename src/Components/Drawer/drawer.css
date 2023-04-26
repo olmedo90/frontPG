@@ -1,11 +1,14 @@
 @import '../../utils/variables.css';
 
-.drawer{
-    position: sticky;
-    left: 0;
-    top: 0;
-}
 
+.w-drawer-open {
+    width: 11%;
+    height: 1vh; 
+}
+.w-drawer-close {
+    width: 4.4%;
+    
+}
 .text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -14,22 +17,13 @@
 .pt-8 {
     padding-top: 2.5rem;
 }
-.w-drawer-open {
-    width: 11rem;
-    height: 98vh;
-    
-}
-
-.w-drawer-close {
-    width: 3.5rem;
-}
 
 .bg-dark-purple {
-    background: linear-gradient(90deg, var(--colors3));
+    background: linear-gradient(9deg, var(--colors3));
 
 }
 .p-drawer {
-    padding-top: 0.8rem;
+    padding-top: .8rem;
 }
 .h-screen {
     height: auto;
@@ -37,8 +31,8 @@
 
 .jst-content {
     display: flex;
-    width: 80%;
-    column-gap: 10%;
+    width: 8%;
+    column-gap: 1%;
     margin-left: 5%;
 
 }
@@ -56,17 +50,17 @@
 }
 /* rotate icon drawer */
 .rotate-drawer {
-    transform: rotate(0deg);
+    transform: rotate(deg);
 
 }
 
 .rotate-drawer-close {
-    transform: rotate(180deg);
+    transform: rotate(18deg);
 }
 
 
 .-right-3 {
-    right: -0.75rem;
+    right: -.75rem;
 }
 
 
@@ -74,24 +68,24 @@
 .wh-icon {
     width: 1.6rem;
     font-size: 1.3rem;
-    border-radius: 100%;
+    border-radius: 1%;
 }
 
 .wh-icon-close {
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     color: black;
 }
 
 .container-img {
     width: 75%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 1%;
 }
 
 /* navigations */
 
 .p-drawer {
-    padding-top: 0.8rem;
+    padding-top: .8rem;
 }
 
 .ul-nav {
@@ -99,8 +93,8 @@
     flex-direction: column;
     column-gap: 2rem;
     list-style: none;
-    padding-left: 0;
-    margin: 0.1rem;
+    padding-left: ;
+    margin: .1rem;
 }
 
 .ul-nav-close {
@@ -108,8 +102,9 @@
     align-items: center;
     flex-direction: column;
     list-style: none;
-    padding-left: 0;
-    margin: 0.1rem;
+    padding-left: ;
+    margin: .1rem;
+    padding-top: 2.5rem;
 
 }
 
@@ -117,36 +112,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 0;
+    padding-left: ;
     width: 95%;
     height: 2.5rem;
-    padding-left: 0.3rem;
-    border-radius: 0.6rem;
-    margin: 0.2rem;
-    border: 0.05rem solid rgba(255, 255, 255, 0.4);
-    border-right: 0.05rem solid rgba(255, 255, 255, 0.2);
-    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0.3rem 1.1rem rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0.5rem);
+    padding-left: .3rem;
+    border-radius: .6rem;
+    margin: .2rem;
+    border: .5rem solid rgba(255, 255, 255, .4);
+    border-right: .5rem solid rgba(255, 255, 255, .2);
+    border-bottom: .5rem solid rgba(255, 255, 255, .2);
+    box-shadow: .3rem 1.1rem rgba(, , , .1);
+    backdrop-filter: blur(.5rem);
     transition: 1s;
 
     overflow: hidden;
 }
 
 .ul-nav-li-close {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 0;
-    width: 68%;
-    height: 2.1rem;
-    border-radius: 0.6rem;
-    margin: 0.2rem;
-    border: 0.05rem solid rgba(255, 255, 255, 0.4);
-    border-right: 0.05rem solid rgba(255, 255, 255, 0.2);
-    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0.3rem 1.1rem rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    width: 1%;
+    height: 2.8rem;
+    border-radius: .6rem;
+    margin: .6rem;
+    border: .5rem solid rgba(255, 255, 255, .4);
+    border-right: .5rem solid rgba(255, 255, 255, .2);
+    border-bottom: .5rem solid rgba(255, 255, 255, .2);
+    box-shadow: .3rem 1.1rem rgba(, , , .1);
+    backdrop-filter: blur(.5rem);
     transition: 1s;
     position: relative;
     overflow: initial;
@@ -157,50 +152,51 @@
   align-items: center;
   border-radius: 1.5rem;
   content: attr(title);
-  background: rgba(7, 7, 7, 0.5);
-  /* background: rgb(0, 0, 0,0.5); */
-  color: rgb(255, 255, 255,0.8);
+  background: rgba(7, 7, 7, .5);
+  /* background: rgb(, , ,.5); */
+  color: rgb(255, 255, 255,.8);
   position: absolute;
   width: 4.5rem;
   left: 2.3rem;
-  font-size: 0.72rem;
+  font-size: .3rem;
   visibility: hidden;
-  transition: all 0.7s ease;
+  transition: all .7s ease;
 }
 .ul-nav-li-close:hover::after{
   visibility: visible;
-  opacity: 1;
+  font-size: .8rem;
+  opacity: 5;
 
 }
 
 .ul-nav-li a {
-    width: 100%;
+    width: 1%;
     display: flex;
     align-items: center;
-    column-gap: 0.5rem;
+    column-gap: .5rem;
     text-decoration: none;
     color: #fff;
 }
 
 .ul-nav-li:hover {
-    transform: translateX(30px);
-    transition: 0.7s;
+    transform: translateX(1.8rem);
+    transition: .7s;
 }
 .ul-nav-li-close:hover {
-    transform: translateX(15px);
-    transition: 0.7s;
+    transform: translateX(1.5rem);
+    transition: .7s;
 }
 
 .ul-nav-li::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 101%;
-    background: rgba(255, 255, 255, 0.5);
+    top: ;
+    left: ;
+    width: 3px;
+    height: 11%;
+    background: rgba(255, 255, 255, .5);
     transform: skewX(45deg) translateX(11.7rem);
-    transition: 0.6s;
+    transition: .6s;
 
     overflow: hidden;
 }
@@ -208,14 +204,14 @@
 .ul-nav-li-close::before {
     content: '';
     position: absolute;
-    border-radius: 50%;
+    border-radius: 5%;
     right: 5rem;
-    width: 0.2rem;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: skewX(0deg) translateX(5rem);
-    backdrop-filter: blur(.08rem);
-    transition: 0.2s;
+    width: .2rem;
+    height: 1%;
+    background: rgba(255, 255, 255, .8);
+    transform: skewX(deg) translateX(5rem);
+    backdrop-filter: blur(.8rem);
+    transition: .2s;
     z-index: 1;
     visibility: hidden;
   }
@@ -223,12 +219,12 @@
 .ul-nav-li:hover::before {
     transform: skewX(45deg) translateX(-11.7rem);
 
-    transition: 0.6s;
+    transition: .6s;
 } 
 
 .ul-nav-li-close:hover::before {
-    transform: skewX(0deg) translateX(3rem);
-    visibility: visible;
+    transform: skewX(deg) translateX(1.6rem);
+    visibility: hidden;
 
-    transition: 0.3s;
+    transition: .3s;
 }

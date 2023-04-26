@@ -1,0 +1,8 @@
+FROM node:19-alpine
+WORKDIR /home/app/frontend
+ENV PATH /home/app/frontend/node_modules/.bin:$PATH
+COPY . . 
+RUN npm install
+RUN npm install react-scripts@5..1 -g
+EXPOSE 3
+CMD ["npm", "start"]
