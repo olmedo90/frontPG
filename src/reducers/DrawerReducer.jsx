@@ -4,8 +4,6 @@ export const initialDrawer = {
 }
 
 export const DrawerReducer = (state, action) => {
-    console.log("🚀 ~ file: DrawerReducer.jsx:7 ~ DrawerReducer ~ state:", state)
-    console.log("🚀 ~ file: DrawerReducer.jsx:7 ~ DrawerReducer ~ action:", action)
     const {payload}=action;
     const {show}=state;
     switch (action.type) {

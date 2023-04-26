@@ -1,8 +1,8 @@
 @import '../../utils/variables.css';
 .position-header{
     width: 99.3%;
-    height: 1vh;
-    background:linear-gradient(9deg, var(--colors3));
+    height: 10vh;
+    background:linear-gradient(90deg, var(--colors3));
 }
 /* .logo-mabels {
     width: 4rem;
