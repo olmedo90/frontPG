@@ -1,12 +1,15 @@
-:root {
+:root{
     --colors1: #2F0079, #4E0079, #6E0079;
     --colors2 : #00517c, #00747C,#007DDC;
+    --colors10:  #880e4f,#ad1457, #d81b60;
+    --colors11:  #b71c1c,#c62828, #d32f2f;
+    --colors12:  #1b5e20,#2e7d32, #43a047;
     --colors9 : #00517c, #2d363b;
     --colors3 : #751400, #D34400;
-    --colors7 : #38b2, #9fbb;
-    --colors4 : #93BA, #BA3F;
-    --colors5 : #93BA, #589B;
+    --colors7 : #4b1a10, #990000;
+    --colors4 : #9300BA, #BA003F;
+    --colors5 : #9300BA, #00589B;
     --colors6 : #009B60,  #00589B;
-    --colors8 : #29312e,  #39b;
+    --colors8 : #29312e,  #039b00;
 
 }

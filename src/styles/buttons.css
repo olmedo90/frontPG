@@ -1,15 +1,4 @@
-:root{
-    --colors1: #2F0079, #4E0079, #6E0079;
-    --colors2 : #00517c, #00747C,#007DDC;
-    --colors9 : #00517c, #2d363b;
-    --colors3 : #751400, #D34400;
-    --colors7 : #380b02, #9f0b0b;
-    --colors4 : #9300BA, #BA003F;
-    --colors5 : #9300BA, #00589B;
-    --colors6 : #009B60,  #00589B;
-    --colors8 : #29312e,  #039b00;
 
-}
 .btnCreate{
     color: #f0f0f0;
     background: linear-gradient(90deg, var(--colors8));
@@ -32,16 +21,16 @@
 
 .btnClose{
     color:#f0f0f0;
-    background: linear-gradient(90deg, var(--colors7));
-    font-size: x-small;
-    border: 0.2rem solid linear-gradient(90deg, var(--colors7));
+    background-image: linear-gradient(to left, var(--colors11));
+    font-size: 1rem;
+    border: 0.02rem solid linear-gradient(90deg, var(--colors7));
     font-weight: 400;
 }
 .btnClose:hover{
     color: #f6f2f2;
     background: linear-gradient(90deg, var(--colors7));
-    font-size: medium;
-    border: 0.2rem solid linear-gradient(90deg, var(--colors7));
+    font-size: 1.1rem;
+    border: 0.02rem solid linear-gradient(90deg, var(--colors7));
     font-weight: 400;
 
 }
@@ -54,13 +43,13 @@
 }
 
 .btnSuccess{
-    background: linear-gradient(90deg, var(--colors8));
+    background: linear-gradient(180deg, var(--colors8));
     color: whitesmoke;
     border: 0.2rem solid linear-gradient(90deg, var(--colors2));
 }
 .btnSuccess:hover{
     color: whitesmoke;
-    border: 0.2rem solid rgb(0, 164, 30);
+    border: 0.2rem solid rgb(19, 70, 28);
 }
 .btnCancel{
     background:  linear-gradient(90deg, var(--colors9));

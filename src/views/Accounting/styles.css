@@ -7,7 +7,11 @@
     border-radius: .5rem;
 }
 .accounts:hover {
-    font-size: 1.4rem;
     color: black;
     background-color: rgb(167, 161, 161);
+}
+.home{
+    border: 0.2rem solid rgb(182, 175, 175);
+    border-radius: 0.5rem;
+    background-color: white;
 }

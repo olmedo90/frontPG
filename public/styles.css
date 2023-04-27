@@ -1,15 +1,15 @@
 *{
-    margin: px;
-    border: px;
-    padding: px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }
 html, body{
     display: flex;
     flex-direction: column;
     height:100vh;
-    margin :px; 
-    border: px;
-    padding: px;
+    margin :0px; 
+    border: 0px;
+    padding: 0px;
 
 }
 

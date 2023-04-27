@@ -1,6 +1,6 @@
 @import '../../utils/variables.css';
 .position-header{
-    width: 99.3%;
+    width: 99.9%;
     height: 10vh;
     background:linear-gradient(90deg, var(--colors3));
 }

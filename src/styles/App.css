@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+   
 }
 .w-screen-container {
     width: 99.5%;
@@ -9,4 +10,26 @@
 .h-screen-container {
     height: 98vh;
 }
-  
+
+.w-content-open{
+    width: 89%;
+    height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.w-content-close{
+    width: 96.6%;
+    height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+.bg-home{
+    background-color: rgb(211, 210, 210);
+}
+.content-home{
+    border: 0.2rem solid rgb(182, 175, 175);
+    border-radius: 0.5rem;
+    background-color: white;
+}

@@ -4,6 +4,7 @@ import { DrawerContext, LoginContext } from "../../ContextProyect/ProyectContext
 import { Types } from "../../types/types";
 import { MenuDrawer } from "../../utils/MenuDrawer";
 import "./drawer.css";
+import { Icon } from '../../utils/Icon';
 export const Drawer = () => {
   const { user } = useContext(LoginContext);
   const {showDrawer, showDrawerDispatch}=useContext(DrawerContext);
@@ -16,11 +17,11 @@ export const Drawer = () => {
     <div
       className={` relative ${
         show ? "w-drawer-open p-drawer " : "w-drawer-close "
-      } bg-dark-purple  `}
+      } bgDrawer  `}
     >
       <img
         src="/assets/control.png"
-        className={` absolute cursor-pointer -right-3  rotate-drawer 
+        className={` absolute cursor-pointer right-3  rotate-drawer 
              ${!show && "rotate-drawer-close "}`}
         onClick={() => setShowDrawer()}
         alt="alt"
@@ -34,8 +35,8 @@ export const Drawer = () => {
           {/* {user.name} */}
         </h1>
       </div>
-      <section className="p-drawer ">
-        <ul className={` ul-nav ${!show && "ul-nav-close"}`}>
+      <section className="my-5 ">
+        <ul className={` ul-nav ${!show && "ul-nav-close "}`}>
           {MenuDrawer.menus.map((Menu, index) => (
             <li
               key={index}
@@ -44,20 +45,14 @@ export const Drawer = () => {
                 show
                   ? "ul-nav-li"
                   : "ul-nav-li-close  cursor-pointer"
-              } ${Menu.gap && "mt-nav-2"}`}
+              } ${Menu.gap && "mt-3"}`}
             >
               <Link
-                to={Menu.gap ? `/${Menu.routes}` : `${Menu.routes}`}
+                to={`${Menu.routes}`}
                 className={`${!show && "link-drawer"} `}
               >
-                {/* {Menu.gap || (
-                  // <i
-                  //   className={`bi ${Menu.src}  ${
-                  //     show ? "wh-icon" : "wh-icon-close "
-                  //   }`}
-                  // ></i>
-                )} */}
-                {` ${show ? Menu.title : ""} `}
+                {!show&& <Icon style="iconDrawer" iconName={Menu.icon}/>}
+                {show &&  <><Icon style="iconDrawer" iconName={Menu.icon}/> {Menu.title}</>}
               </Link>
             </li>
           ))}
