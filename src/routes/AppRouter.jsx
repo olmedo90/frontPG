@@ -7,6 +7,7 @@ import { Accounting } from "../views/Accounting";
 import { ChartOfAccount } from "../views/Accounting/ChartOfAccounts";
 import { Dashboard } from "../Components/Dashboard";
 import Home from "../Components/Home";
+import { IcomeAndExpenses } from '../views/Accounting/IcomeAndExpenses/index';
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
         <Route path="/home/*" element={<Home />}>
           <Route path="accounting/*" element={<Accounting />}>
             <Route path="chartOfAccounts" element={<ChartOfAccount />} />
+            <Route path="icomeAndExpenses" element={<IcomeAndExpenses />} />
           </Route>
         </Route>
         <Route path="/dashboard/*" element={<Dashboard />}>

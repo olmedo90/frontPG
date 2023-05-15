@@ -9,7 +9,7 @@ export const Accounting = () => {
   const { showDrawer } = useContext(DrawerContext);
 
   return (
-  <section className="col-md-12 row d-flex justify-content-center py-2">
+  <section className="content row d-flex flex-column justify-content-center py-2">
       <NavbarAccount />
         <Outlet/>
   </section>

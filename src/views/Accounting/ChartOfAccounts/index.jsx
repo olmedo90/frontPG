@@ -23,7 +23,7 @@ export const ChartOfAccount = () => {
 
   function createChartOfAccountsTree(input) {
     const accounts = {};
-    const top = {};
+    const top = [];
     for (const { code, acount_name, id } of input) {
       let account = {
         code,
@@ -39,6 +39,7 @@ export const ChartOfAccount = () => {
       } else {
         top[code] = account;
       }
+      
       accounts[code] = account;
     }
     return (top);
@@ -47,10 +48,6 @@ export const ChartOfAccount = () => {
   return (
     <div className="content-home ">
       <TreeViewsAccounts treeAccounts={createChartOfAccountsTree(accounts)}/>
-      <button onClick={() => createChartOfAccountsTree(accounts)}>
-        Mi proyecto
-      </button>
-    
     </div>
   );
 };

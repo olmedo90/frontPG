@@ -1,52 +1,52 @@
+
+
 import * as React from "react";
-import TreeView from "@mui/lab/TreeView";
-import TreeItem from "@mui/lab/TreeItem";
 import { Icon } from "../../../utils/Icon";
+import {TreeView, TreeItem} from '@mui/lab';
 import {
   faChevronDown,
   faChevronRight,
+  faSquareCaretRight,
+  faSquareCaretDown,
+  faSquare
 } from "@fortawesome/free-solid-svg-icons";
 
-const data = {
-  id: "1",
-  name: "Parent",
-  children: [
-    {
-      id: "2",
-      name: "Child - 1",
-    },
-    {
-      id: "3",
-      name: "Child - 3",
-      children: [
-        {
-          id: "4",
-          name: "Child - 4",
-        },
-      ],
-    },
-  ],
-};
+const Items = ({code, name})=>{
+  return(
+    <div className="row  d-flex align-items-center my-1">
+      <span className="col-auto ">
+      <b className="mx-3">{code}</b>
+      {name}
+      </span>
+      
+    </div>
+  )
+}
 
-export const TreeViewsAccounts = ({ treeAccounts }) => {
-    console.log("🚀 ~ file: index.jsx:32 ~ TreeViewsAccounts ~ treeAccounts:", treeAccounts[2])
+const renderTree = tree => {
+  return <TreeItem 
+    key={tree.id} 
+    nodeId={tree.code} 
+    label={<Items code={tree.code} name={tree.acount_name} />} 
 
-  const renderTree = (nodes) => (
-      <TreeItem key={nodes?.code} nodeId={nodes?.code} label={nodes?.acount_name}>
-        {Array.isArray(nodes?.children)
-          ? nodes.children.map((node) => renderTree(node))
-          : null}
-          
-      </TreeItem>
-  );
+>
+      
+    {tree.children && tree.children.map((node)=>renderTree(node))}
+  </TreeItem>
+
+
+}
+
+
+export const  TreeViewsAccounts =  ({ treeAccounts }) => {
   return (
-    <TreeView
-      aria-label="rich object"
-      defaultCollapseIcon={<Icon styles="" iconName={faChevronDown} />}
-      defaultExpanded={["101"]}
-      defaultExpandIcon={<Icon style="" iconName={faChevronRight} />}
-    > 
-      {renderTree(treeAccounts[4])}
-    </TreeView>
+<TreeView 
+   defaultCollapseIcon={<Icon style="iconAccounts" iconName={faChevronDown} />}
+   defaultExpandIcon={<Icon style="iconAccounts" iconName={faChevronRight} />} 
+   sx={{ height:500,width:"100%" ,flexGrow: 1,  overflowY: 'auto' }}
+>
+  {treeAccounts.map(item => renderTree(item))}
+</TreeView>
   );
 };
+
